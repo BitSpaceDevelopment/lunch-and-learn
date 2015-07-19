@@ -1,0 +1,68 @@
+<!doctype html>
+<html data-ng-app="app">
+
+<head lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Angular | Welcome</title>
+
+  <link rel="stylesheet" href="./assets/css/foundation.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="text/javascript" src="./assets/js/vendor/modernizr.js"></script>
+
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1>Welcome to Foundation</h1>
+    </div>
+  </div>
+
+  <!-- layout-->
+  <div id="layout" class="layout-wide">
+
+    <div ng-controller="headerController">
+      <ng-include src="'/views/partials/header.tpl.html'"></ng-include>
+    </div>
+
+    <!--Main content-->
+    <ng-view></ng-view>
+
+    <div ng-controller="navController">
+      <ng-include src="'/views/partials/footer.tpl.html'"></ng-include>
+    </div>
+  </div>
+
+
+
+  <!-- App Config -->
+  <script type="text/javascript" src="./assets/js/vendor/jquery.js"></script>
+
+  <script type="text/javascript" src="./assets/js/foundation.min.js"></script>
+  <script type="text/javascript" src="./assets/js/angular.min.js"></script>
+  <script type="text/javascript" src="./assets/js/angular/angular-route.min.js"></script>
+  <script type="text/javascript" src="./app/config/app.js"></script>
+  <script type="text/javascript" src="./app/config/routes.js"></script>
+
+  <!-- Controllers -->
+  <script type="text/javascript" src="./app/controllers/indexController.js"></script>
+  <script type="text/javascript" src="./app/controllers/aboutController.js"></script>
+  <script type="text/javascript" src="./app/controllers/headerController.js"></script>
+  <script type="text/javascript" src="./app/controllers/navController.js"></script>
+  <script type="text/javascript" src="./app/controllers/contactController.js"></script>
+  <script type="text/javascript" src="./app/controllers/servicesController.js"></script>
+  <script type="text/javascript" src="./app/controllers/workController.js"></script>
+  <script type="text/javascript" src="./app/controllers/worksController.js"></script>
+  <script type="text/javascript" src="./app/controllers/pressController.js"></script>
+  <script type="text/javascript" src="./app/controllers/notFoundController.js"></script>
+  <!-- End layout-->
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+
+</html>
