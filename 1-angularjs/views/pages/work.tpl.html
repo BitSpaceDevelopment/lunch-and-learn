@@ -1,19 +1,19 @@
 <div class="row">
 
   We have {{works.length}} projects. They are:
-    <input type="search" ng-model="q" placeholder="filter works..." aria-label="filter works" />
+  <input type="search" ng-model="q" placeholder="filter works..." aria-label="filter works" />
 
-    <ul class="example-animate-container">
+  <ul class="example-animate-container">
 
-      <div class="large-3 small-6 columns animate-repeat"  ng-repeat="work in works | filter:q as results">
-        <img src="http://placehold.it/250x250&amp;text=Thumbnail">
-        <h6 class="panel">[{{$index + 1}}] {{work.name}} paid us ${{work.money}} for {{work.type}}.</h6>
-      </div>
+    <div class="large-3 small-6 columns animate-repeat" ng-repeat="work in works | filter:q as results">
+      <img src="http://placehold.it/250x250&amp;text=Thumbnail">
+      <h6 class="panel">[{{$index + 1}}] {{work.name}} paid us ${{work.money}} for {{work.type}}.</h6>
+    </div>
 
 
-      <li class="animate-repeat" ng-if="results.length == 0">
-        <strong>No results found...</strong>
-      </li>
+    <li class="animate-repeat" ng-if="results.length == 0">
+      <strong>No results found...</strong>
+    </li>
 
-    </ul>
+  </ul>
 </div>

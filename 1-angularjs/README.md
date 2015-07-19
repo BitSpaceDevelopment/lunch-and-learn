@@ -1,48 +1,85 @@
-# Angular JS
+# Angular JS Lunch & Learn
+By popular demand of our team, the first lunch and learn is about Angular JS. We will be using Angular JS paird up with Zurb Foundation to build a simple website featuring routing and data binding.
 
-By popular demand of our team, the first lunch and learn is about Angular JS.
+# [Foundation](http://foundation.zurb.com)
 
-AngularJS [![Build Status](https://travis-ci.org/angular/angular.js.svg?branch=master)](https://travis-ci.org/angular/angular.js)
-=========
+[![Build Status](https://travis-ci.org/zurb/foundation.svg)](https://travis-ci.org/zurb/foundation)
 
-AngularJS lets you write client-side web applications as if you had a smarter browser.  It lets you
-use good old HTML (or HAML, Jade and friends!) as your template language and lets you extend HTML’s
-syntax to express your application’s components clearly and succinctly.  It automatically
-synchronizes data from your UI (view) with your JavaScript objects (model) through 2-way data
-binding. To help you structure your application better and make it easy to test, AngularJS teaches
-the browser how to do dependency injection and inversion of control.
 
-Oh yeah and it helps with server-side communication, taming async callbacks with promises and
-deferreds. It also makes client-side navigation and deeplinking with hashbang urls or HTML5 pushState a
-piece of cake. Best of all?? It makes development fun!
+Foundation is the most advanced responsive front-end framework in the world. You can quickly prototype and build sites or apps that work on any kind of device with Foundation, which includes layout constructs (like a fully responsive grid), elements and best practices.
 
-* Web site: http://angularjs.org
-* Tutorial: http://docs.angularjs.org/tutorial
-* API Docs: http://docs.angularjs.org/api
-* Developer Guide: http://docs.angularjs.org/guide
-* Contribution guidelines: [CONTRIBUTING.md](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md)
-* Dashboard: http://dashboard.angularjs.org
+To get started, check out <http://foundation.zurb.com/docs>
 
-Building AngularJS
----------
+
+## Quickstart
+
+To get going with Foundation you can:
+
+  * [Download the latest release](http://foundation.zurb.com/develop/download.html)
+  * [Install with Bower](http://bower.io): `bower install foundation`
+  * [Install with npm](http://npmjs.com): `npm install foundation-sites`
+
+## Documentation
+
+Foundation uses [Assemble.io](http://assemble.io) and [Grunt](http://gruntjs.com/) to generate its [documentation pages](http://foundation.zurb.com/docs). Documentation can also be run from your local computer:
+
+### View documentation locally
+
+You'll want to clone the Foundation repo first and install all the dependencies. You can do this using the following commands:
+
+```
+git clone git@github.com:zurb/foundation.git
+cd foundation
+npm install -g grunt-cli bower
+npm install
+bower install
+bundle install
+```
+
+Then just run `grunt build` and the documentation will be compiled:
+
+```
+foundation/
+├── dist/
+│   └── ...
+├────── docs/
+│       └── ...
+```
+
+Copyright (c) 2015 ZURB, inc.
+
+# AngularJS [![Build Status](https://travis-ci.org/angular/angular.js.svg?branch=master)](https://travis-ci.org/angular/angular.js)
+AngularJS lets you write client-side web applications as if you had a smarter browser.  It lets you use good old HTML (or HAML, Jade and friends!) as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly.  It automatically synchronizes data from your UI (view) with your JavaScript objects (model) through 2-way data binding. To help you structure your application better and make it easy to test, AngularJS teaches the browser how to do dependency injection and inversion of control.
+
+Oh yeah and it helps with server-side communication, taming async callbacks with promises and deferreds. It also makes client-side navigation and deeplinking with hashbang urls or HTML5 pushState a piece of cake. Best of all?? It makes development fun!
+- Web site: [http://angularjs.org](http://angularjs.org)
+- Tutorial: [http://docs.angularjs.org/tutorial](http://docs.angularjs.org/tutorial)
+- API Docs: [http://docs.angularjs.org/api](http://docs.angularjs.org/api)
+- Developer Guide: [http://docs.angularjs.org/guide](http://docs.angularjs.org/guide)
+- Contribution guidelines: [CONTRIBUTING.md](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md)
+- Dashboard: [http://dashboard.angularjs.org](http://dashboard.angularjs.org)
+
+## Building AngularJS
 [Once you have your environment setup](http://docs.angularjs.org/misc/contribute) just run:
 
-    grunt package
+```
+grunt package
+```
 
-
-Running Tests
--------------
+## Running Tests
 To execute all unit tests, use:
 
-    grunt test:unit
+```
+grunt test:unit
+```
 
 To execute end-to-end (e2e) tests, use:
 
-    grunt package
-    grunt test:e2e
+```
+grunt package
+grunt test:e2e
+```
 
-To learn more about the grunt tasks, run `grunt --help` and also read our
-[contribution guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md).
-
+To learn more about the grunt tasks, run `grunt --help` and also read our [contribution guidelines](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md).
 
 [![Analytics](https://ga-beacon.appspot.com/UA-8594346-11/angular.js/README.md?pixel)](https://github.com/igrigorik/ga-beacon)
