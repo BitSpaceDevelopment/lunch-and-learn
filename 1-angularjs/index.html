@@ -1,7 +1,7 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html data-ng-app="app">
 
-<head>
+<head lang="en">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -9,8 +9,6 @@
 
   <link rel="stylesheet" href="./assets/css/foundation.css" />
   <script type="text/javascript" src="./assets/js/vendor/modernizr.js"></script>
-
-  <base href="/">
 
 </head>
 
@@ -30,7 +28,7 @@
     </div>
 
     <!--Main content-->
-    <div ng-view class="view"></div>
+    <ng-view></ng-view>
 
     <div ng-controller="navController">
       <ng-include src="'/views/partials/footer.tpl.html'"></ng-include>
@@ -40,9 +38,10 @@
 
 
   <!-- App Config -->
-  <script type="text/javascript" src="./assets/js/angular.min.js"></script>
   <script type="text/javascript" src="./assets/js/vendor/jquery.js"></script>
+
   <script type="text/javascript" src="./assets/js/foundation.min.js"></script>
+  <script type="text/javascript" src="./assets/js/angular.min.js"></script>
   <script type="text/javascript" src="./assets/js/angular/angular-route.min.js"></script>
   <script type="text/javascript" src="./app/config/app.js"></script>
   <script type="text/javascript" src="./app/config/routes.js"></script>
